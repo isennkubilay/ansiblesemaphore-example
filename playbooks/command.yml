@@ -2,5 +2,5 @@
 - hosts: kubernetes
   tasks:
     - name: Check file location
-      command: pwd
+      command: helm repo list
       ignore_errors: yes
