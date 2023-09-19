@@ -1,6 +1,8 @@
 ---
 - hosts: kubernetes
   tasks:
-    - name: Check file location
+    - name: Check helm repo
       command: helm repo list
+      register: helm
       ignore_errors: yes
+    - debug: var=helm.stdout_lines
