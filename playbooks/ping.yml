@@ -1,6 +1,6 @@
 - hosts:
     - kubernetes
-  vars:
-    ansible_host_key_checking: false
+  # vars:
+  #   ansible_host_key_checking: false
   tasks:
     - action: ping
