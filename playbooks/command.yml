@@ -1,0 +1,6 @@
+---
+- hosts: kubernetes
+  tasks:
+    - name: Check file location
+      command: pwd
+      ignore_errors: yes
